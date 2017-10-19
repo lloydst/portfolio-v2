@@ -27,7 +27,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeNoSandboxHeadless','Chrome'],
+    browsers: ['ChromeNoSandboxHeadless'], // change to chrome for local testing ChromeNoSandboxHeadless is for travis
     customLaunchers: {
       ChromeNoSandboxHeadless: {
         base: 'Chrome',
