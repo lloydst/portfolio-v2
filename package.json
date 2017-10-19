@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
+    "front": "ng serve -o",
+    "back": "nodemon server.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,6 +24,11 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "geckodriver": "^1.9.0",
+    "mongoose": "^4.11.12",
+    "morgan": "^1.8.2",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -44,6 +51,8 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
+    "nodemon": "^1.12.1",
+    "cors": "^2.8.4",
     "typescript": "~2.3.3"
   }
 }
