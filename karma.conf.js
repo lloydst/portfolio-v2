@@ -27,7 +27,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeNoSandboxHeadless'], // change to chrome for local testing ChromeNoSandboxHeadless is for travis
+    browsers: ['ChromeNoSandboxHeadless'], // change to Chrome for local testing ChromeNoSandboxHeadless is for travis
     customLaunchers: {
       ChromeNoSandboxHeadless: {
         base: 'Chrome',
@@ -37,10 +37,11 @@ module.exports = function (config) {
           '--headless',
           '--disable-gpu',
           // Without a remote debugging port, Google Chrome exits immediately.
-          ' --remote-debugging-port=9222',
+          ' --remote-debugging-port=9222'
         ],
       },
     },
-    singleRun: false
+
+    singleRun: true //set to false for dev
   });
 };
