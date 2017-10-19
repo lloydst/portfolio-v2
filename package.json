@@ -8,7 +8,8 @@
     "back": "nodemon server.js",
     "start": "node server.js",
     "build": "ng build",
-    "test": "ng test",
+    "testAngular":"ng test",
+    "test": "karma start --single-run --browsers PhantomJS",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
