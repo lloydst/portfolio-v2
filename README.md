@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lloydst/portfolio-v2.svg?branch=master)](https://travis-ci.org/lloydst/portfolio-v2)
 # PortfolioV2.1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.8.
